@@ -9,31 +9,104 @@
         body {
             text-align: center;
             background-color: oklab(90.929% -0.01076 0.04891);
+            font-family: 標楷體, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         }
 
         .sub-title {
             background-color: aqua;
             color: rgb(18, 18, 46);
         }
+
+        /* . -> class */
+        .content {
+            background-color: darksalmon;
+            padding: 48px 24px;
+        }
+
+        /* # -> id */
+        #image {
+            border: 2px black solid;
+            background-color: rgb(204, 167, 154);
+        }
+
+        #image img {
+            margin: 12px;
+            width: 28%;
+            border-radius: 12px;
+        }
+
+        #bmiTable {
+            width: 60%;
+            height: 250px;
+            margin: 12px auto;
+        }
+
+        #bmiTable th {
+            background-color: chartreuse;
+        }
+
+        #bmiTable td {
+            background-color: cadetblue;
+            color: white;
+            text-align: center;
+        }
+
+        #bmiTable td:first-child {
+            background-color: rgb(104, 5, 170);
+        }
+
+        h2 {
+            display: inline-block;
+            width: 400px;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid darkblue;
+        }
+
+        /* 7/30 2:00:00 */
+        form {
+            background-color: antiquewhite;
+            width: 500px;
+            margin: 0 auto;
+            padding: 24px 0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        input {
+            text-align: center;
+        }
+
+        button {
+            background-color: rgb(90, 95, 85);
+            width: 120px;
+            height: 30px;
+            border: none;
+            border-radius: 8px;
+            color: white;
+        }
     </style>
 </head>
 
-<body> <!-- 7/23 2:00:00-->
+<body> <!-- 內容區 7/23 2:00:00-->
     <h1 style="background-color: chocolate;color: white;">何謂健身?</h1>
-    <img width="60%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVfOooRfhjyDOaWi34RVCSmiJF2IxXS3Yk8A&s"
+    <img width="90%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVfOooRfhjyDOaWi34RVCSmiJF2IxXS3Yk8A&s"
         alt="">
-    <h3>健身，英文稱為workout，健身這兩個字拆開來的意思就是健康身體，<br>
-        通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，<br>
-        以及提高協調和控制身體各部分的能力來使我們的身體更強健。</h3>
-    <p>
-        <em>除了塑造好身材，透過健身可以刺激我們身體的肌肉，再搭配飲食的控制，這能<br>
-            大大幫助我們的肌肉量增加，以及讓我們的肌肉更加的結實。<br>
-            如果你對健身仍然保持著懷疑的態度，那你大可以去看看你喜歡的健身老戲骨幹，<br>
-            他們是如何做到年過50/60歲，依舊在舞臺上或者是電影螢幕上綻放光彩。</em><br>
-        <b>
-            <u>答案就是堅持運動健身!</u>
-        </b>
-    </p>
+
+    <div class="content">
+        <!-- 7/30 1:00:00 -->
+        <h3>健身，英文稱為workout，健身這兩個字拆開來的意思就是健康身體，<br>
+            通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，<br>
+            以及提高協調和控制身體各部分的能力來使我們的身體更強健。</h3>
+        <p>
+            <em>除了塑造好身材，透過健身可以刺激我們身體的肌肉，再搭配飲食的控制，這能<br>
+                大大幫助我們的肌肉量增加，以及讓我們的肌肉更加的結實。<br>
+                如果你對健身仍然保持著懷疑的態度，那你大可以去看看你喜歡的健身老戲骨幹，<br>
+                他們是如何做到年過50/60歲，依舊在舞臺上或者是電影螢幕上綻放光彩。</em><br>
+            <b>
+                <u>答案就是堅持運動健身!</u>
+            </b>
+        </p>
+    </div>
     <hr>
     <h2 class="sub-title">健身的10個好處</h2>
     <ol type="i" style="text-align: left;">
@@ -50,21 +123,23 @@
     </ol>
     <hr>
     <h2 class="sub-title">好文章連結</h2>
-    <li>
-        <a target="_blank" href="https://www.fe-amart.com.tw/index.php/life-style/life-info/secret-recipe/hero-6
-        ">健身初學者必看！10個常見的健身迷思</a>
-    </li>
-    <li>
-        <a href="https://www.teamjoined.com.tw/pages/jump-rope-mat">
-            好的緩衝支撐、讓訓練更穩健！為什麼跳繩需要訓練墊？</a>
-    </li>
-    <li>
-        <a href="https://www.teamjoined.com.tw/pages/article-1111">
-            雙11狂歡尋寶，完美健人由你定義</a>
-    </li>
+    <div class="content" style="background-color: aquamarine; font-size: 24px;">
+        <li>
+            <a target="_blank" href="https://www.fe-amart.com.tw/index.php/life-style/life-info/secret-recipe/hero-6
+                ">健身初學者必看！10個常見的健身迷思</a>
+        </li>
+        <li>
+            <a href="https://www.teamjoined.com.tw/pages/jump-rope-mat">
+                好的緩衝支撐、讓訓練更穩健！為什麼跳繩需要訓練墊？</a>
+        </li>
+        <li>
+            <a href="https://www.teamjoined.com.tw/pages/article-1111">
+                雙11狂歡尋寶，完美健人由你定義</a>
+        </li>
+    </div>
     <hr>
     <h2 class="sub-title">一天所需卡路里</h2>
-    <table border="1">
+    <table border="1" id="bmiTable">
         <thead>
             <tr>
                 <th>每天活動量</th>
@@ -94,27 +169,34 @@
             </tr>
         </tbody>
     </table>
-    <b><a href="bmi.html">計算BMI:</a>
-        &nbsp; &nbsp;</b>
-    一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。<br>
-    <h2>計算所需熱量:&copy;◆</h2>
-    因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。
+    <div style="text-align: left;margin-left: 24px;">
+        <b><a href="bmi.html">計算BMI:</a></b>
+        一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。<br>
+        計算所需熱量:&copy;
+        因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。
+    </div>
     <hr>
     <h2 class="sub-title">健身照片</h2>
-    <img width="30%" src="img/pic-1.jpg" alt="圖片消失">
-    <img width="30%" src="img/pic-2.jpg" alt="">
-    <img width="30%" src="img/pic-3.jpg" alt="">
+    <div id="image">
+        <img src="img/pic-1.jpg" alt="圖片消失">
+        <img src="img/pic-2.jpg" alt="">
+        <img src="img/pic-3.jpg" alt="">
+    </div>
+
     <hr>
     <h2 class="sub-title">健身影片</h2>
-    <iframe width="45%" height="360" src="https://www.youtube.com/embed/TtbrOIUYtGw"
-        title="30分鐘 超慢跑｜初學節拍超慢跑｜180BPM｜暖身+伸展｜有音樂♫" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="45%" height="360" src="https://www.youtube.com/embed/KJrm8eVs1pE"
-        title="【初階】男女適用 10分鐘無跳躍 全身燃脂運動 (適用新手、大體重)" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <video controls width="91%" src="video/Sample MP4 Video File Download.mp4"></video>
+    <div>
+        <iframe width="45%" height="360" src="https://www.youtube.com/embed/TtbrOIUYtGw"
+            title="30分鐘 超慢跑｜初學節拍超慢跑｜180BPM｜暖身+伸展｜有音樂♫" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="45%" height="360" src="https://www.youtube.com/embed/KJrm8eVs1pE"
+            title="【初階】男女適用 10分鐘無跳躍 全身燃脂運動 (適用新手、大體重)" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <!-- <video controls width="91%" src="video/Sample MP4 Video File Download.mp4"></video> -->
+
     <hr>
     <h2 class="sub-title">表單</h2>
     <h3>需要更多資訊?免費索取健身資訊</h3>
